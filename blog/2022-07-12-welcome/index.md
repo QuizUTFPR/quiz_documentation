@@ -1,7 +1,7 @@
 ---
-slug: welcome
-title: Welcome
-authors: [slorber, yangshun]
+slug: bem vindo
+title: Bem Vindo
+authors: [jhonatancunha, jessepires]
 tags: [facebook, hello, docusaurus]
 ---
 
