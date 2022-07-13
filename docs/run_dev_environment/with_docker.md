@@ -21,6 +21,12 @@ cp docker-compose-dev-example.yml docker-compose-dev.yml
 
 Por fim, execute o seguinte comando para executar todo o sistema:
 
+:::tip Atenção
+
+Lembre-se de configurar as variáveis de ambiente, tanto para o [Painel de Controle](../environment_variables/frontend.md) quanto para a [API (Backend)](../environment_variables/backend.md).
+
+:::
+
 ```bash
 docker-compose -f docker-compose-dev.yml up -d --build
 ```
