@@ -4,85 +4,127 @@ sidebar_position: 2
 
 # Rodar sem Docker
 
-Let's translate `docs/intro.md` to French.
+Para conseguir rodar o projeto em sua máquina, instale as seguintes ferramentas:
 
-## Configure i18n
+- [Node.js](https://nodejs.org/en/) versão v16.16.0.
+- [Yarn](https://classic.yarnpkg.com/lang/en/docs/install/#debian-stable) (opcional).
+- [Android Studio](https://developer.android.com/studio/install?hl=pt-br) (caso não utilize um dispositivo físico)
+- [Expo CLI](https://docs.expo.dev/workflow/expo-cli/)
 
-Modify `docusaurus.config.js` to add support for the `fr` locale:
-
-```js title="docusaurus.config.js"
-module.exports = {
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'fr'],
-  },
-};
-```
-
-## Translate a doc
-
-Copy the `docs/intro.md` file to the `i18n/fr` folder:
-
-```bash
-mkdir -p i18n/fr/docusaurus-plugin-content-docs/current/
-
-cp docs/intro.md i18n/fr/docusaurus-plugin-content-docs/current/intro.md
-```
-
-Translate `i18n/fr/docusaurus-plugin-content-docs/current/intro.md` in French.
-
-## Start your localized site
-
-Start your site on the French locale:
-
-```bash
-npm run start -- --locale fr
-```
-
-Your localized site is accessible at [http://localhost:3000/fr/](http://localhost:3000/fr/) and the `Getting Started` page is translated.
-
-:::caution
-
-In development, you can only use one locale at a same time.
-
+:::tip Atenção
+Lembre-se de configurar as variáveis de ambiente para o [Painel de Controle](../environment_variables/frontend.md), a [API (Backend)](../environment_variables/backend.md) e para o [Aplicativo Smartphone](./../environment_variables/mobile.md).
 :::
 
-## Add a Locale Dropdown
+## Iniciar o Painel de Controle
 
-To navigate seamlessly across languages, add a locale dropdown.
+Para iniciar o painel de controle é necessário instalar as dependências, sendo assim, siga os seguintes passos:
 
-Modify the `docusaurus.config.js` file:
-
-```js title="docusaurus.config.js"
-module.exports = {
-  themeConfig: {
-    navbar: {
-      items: [
-        // highlight-start
-        {
-          type: 'localeDropdown',
-        },
-        // highlight-end
-      ],
-    },
-  },
-};
+```bash title="npm"
+cd frontend
+npm i
 ```
 
-The locale dropdown now appears in your navbar:
-
-![Locale Dropdown](./img/localeDropdown.png)
-
-## Build your localized site
-
-Build your site for a specific locale:
-
-```bash
-npm run build -- --locale fr
+```bash title="yarn"
+cd frontend
+yarn
 ```
 
-Or build your site to include all the locales at once:
+Após isso, basta executar o comando de iniciar o servidor.
 
-```bash
+```bash title="npm"
+npm run start
+```
+
+```bash title="yarn"
+yarn start
+```
+
+## Iniciar a API (Backend)
+
+Para iniciar a API é necessário instalar as dependências, sendo assim, siga os seguintes passos:
+
+```bash title="npm"
+cd backend
+npm i
+```
+
+```bash title="yarn"
+cd backend
+yarn
+```
+
+Posteriormente, necessitamos realizar a execução do comando que irá montar todas as tabelas do banco de dados.
+
+```bash title="npm"
+npm run migrate
+```
+
+```bash title="yarn"
+yarn migrate
+```
+
+Por fim, basta executar o comando de iniciar o servidor.
+
+```bash title="npm"
+npm run dev
+```
+
+```bash title="yarn"
+yarn dev
+```
+
+## Iniciar o Aplicativo SmartPhone
+
+Para iniciar a aplicação SmartPhone é necessário instalar as dependências, sendo assim, siga os seguintes passos:
+
+```bash title="npm"
+cd mobile
+npm i
+```
+
+```bash title="yarn"
+cd mobile
+yarn
+```
+
+Posteriormente, para executar o aplicativo será necessário possuir em mãos um celular ou um emulador. Sendo assim, execute o seguinte comando:
+
+:::tip Atenção
+Para rodar o aplicativo em seu dispositivo físico, basta seguir as instruções [clicando aqui](https://docs.expo.dev/guides/testing-on-devices/).
+:::
+
+```bash title="npm"
+npm run start
+```
+
+```bash title="yarn"
+yarn start
+```
+
+<!-- ## Como realizar o `build` do Painel de Controle?
+
+Para obter os arquivos necessários para colocar o Painel de Controle em produção, basta executar os seguintes comandos:
+
+```bash title="npm"
+cd frontend
 npm run build
 ```
+
+```bash title="yarn"
+cd frontend
+yarn build
+```
+
+## Como executar a API em modo de produção?
+
+Para executar o servidor _backend_ em modo produção, basta executar os seguintes comandos:
+
+```bash title="npm"
+cd backend
+npm run prod
+```
+
+```bash title="yarn"
+cd backend
+yarn prod
+``` -->

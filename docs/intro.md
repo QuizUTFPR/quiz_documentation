@@ -10,6 +10,10 @@ Vamos descobrir como configurar o ambiente do sistema **Quiz Gamificado UTFPR**.
 
 - [Git](https://git-scm.com/downloads) última versão.
 - [Node.js](https://nodejs.org/en/) versão v16.16.0 (caso rodar localmente).
+- [PM2](https://pm2.keymetrics.io/) (caso rodar sem `docker`)
+- [Android Studio](https://developer.android.com/studio/install?hl=pt-br) (caso não utilize um dispositivo físico)
+- [Yarn](https://classic.yarnpkg.com/lang/en/docs/install/#debian-stable) (opcional).
+- [Expo CLI](https://docs.expo.dev/workflow/expo-cli/)
 
 ## Começando
 
@@ -19,8 +23,6 @@ Inicie clonando o repositório oficial do projeto.
 git clone https://github.com/jhonatancunha/quizUTFPR
 cd quizUTFPR
 ```
-
-
 
 <!-- ## Generate a new site
 
