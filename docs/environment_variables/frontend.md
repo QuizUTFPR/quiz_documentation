@@ -1,10 +1,16 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # Painel de Controle
 
 Entre no diretório do `frontend` e realize a cópia do arquivo `.env.example`.
+
+:::danger Atenção
+
+O nome de destino do arquivo copiado deve ser obrigatoriamente `.env`
+
+:::
 
 ```bash
 cd quizUTFPR/frontend
