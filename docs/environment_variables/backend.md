@@ -4,28 +4,58 @@ sidebar_position: 3
 
 # API (Backend)
 
-Docusaurus is a **static-site-generator** (also called **[Jamstack](https://jamstack.org/)**).
+Entre no diretório do `backend` e realize a cópia do arquivo `.env.example`.
 
-It builds your site as simple **static HTML, JavaScript and CSS files**.
+:::danger Atenção
 
-## Build your site
+O nome de destino do arquivo copiado deve ser obrigatoriamente `.env`
 
-Build your site **for production**:
-
-```bash
-npm run build
-```
-
-The static files are generated in the `build` folder.
-
-## Deploy your site
-
-Test your production build locally:
+:::
 
 ```bash
-npm run serve
+cd quizUTFPR/backend
+cp .env.example .env
 ```
 
-The `build` folder is now served at [http://localhost:3000/](http://localhost:3000/).
+Abra o arquivo `.env` e preencha os seguintes valores:
 
-You can now deploy the `build` folder **almost anywhere** easily, **for free** or very small cost (read the **[Deployment Guide](https://docusaurus.io/docs/deployment)**).
+
+```  title="backend/.env"
+APP_URL=
+
+DB_HOST=
+DB_PORT=
+DB_USER=
+DB_PASS=
+DB_NAME=
+DB_DIALECT=
+
+SECRET=
+EXPIRE_IN=
+TIMEZONE=
+
+LDAP_URL=
+LDAP_USERNAME=
+LDAP_PASSWORD=
+```
+
+Onde:
+
+- `APP_URL` → URL por onde a API será acessada (usado para gerar *links* de imagens).
+- `DB_HOST` → Endereço do servidor do banco de dados (SGBD).
+- `DB_PORT` → Porta do servidor do banco de dados (SGBD).
+- `DB_USER` → Usuário do banco de dados.
+- `DB_PASS` → Senha do banco de dados.
+- `DB_NAME` → Nome do banco de dados.
+- `DB_DIALECT` → Tipo de SGBD utilizado, por exemplo: `mysql`.
+  
+- `SECRET` → Chave utilizada para geração do **JWT token**.
+- `EXPIRE_IN` → Tempo de validade do token, por exemplo: `2d`.
+- `TIMEZONE` → Fuso horário utilizado pelo SGBD, por exemplo: `+03:00`.
+  
+- `LDAP_URL` → URL do servidor **LDAP** de sua instituição.
+- `LDAP_USERNAME` → Usuário do servidor **LDAP** de sua instituição.
+- `LDAP_PASSWORD` → Senha do servidor **LDAP** de sua instituição.
+
+
+

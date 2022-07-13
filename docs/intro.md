@@ -9,6 +9,7 @@ Vamos descobrir como configurar o ambiente do sistema **Quiz Gamificado UTFPR**.
 ### Ferramentas Necessárias
 
 - [Git](https://git-scm.com/downloads) última versão.
+- [Node.js](https://nodejs.org/en/) versão v16.16.0 (caso rodar localmente).
 
 ## Começando
 
