@@ -23,7 +23,7 @@ cp docker-compose-dev-example.yml docker-compose-dev.yml
 
 Por fim, execute o seguinte comando para executar todo o sistema:
 
-:::tip Atenção
+:::caution Atenção
 Lembre-se de configurar as variáveis de ambiente para o [Painel de Controle](../environment_variables/frontend.md), a [API (Backend)](../environment_variables/backend.md) e para o [Aplicativo Smartphone](./../environment_variables/mobile.md).
 :::
 
@@ -47,7 +47,7 @@ yarn
 
 Posteriormente, para executar o aplicativo será necessário possuir em mãos um celular ou um emulador. Sendo assim, execute o seguinte comando:
 
-:::tip Atenção
+:::tip Rodar em seu Dispositivo
 Para rodar o aplicativo em seu dispositivo físico, basta seguir as instruções [clicando aqui](https://docs.expo.dev/guides/testing-on-devices/).
 :::
 

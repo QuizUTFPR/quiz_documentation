@@ -11,7 +11,7 @@ Para conseguir rodar o projeto em sua máquina, instale as seguintes ferramentas
 - [Android Studio](https://developer.android.com/studio/install?hl=pt-br) (caso não utilize um dispositivo físico)
 - [Expo CLI](https://docs.expo.dev/workflow/expo-cli/)
 
-:::tip Atenção
+:::caution Atenção
 Lembre-se de configurar as variáveis de ambiente para o [Painel de Controle](../environment_variables/frontend.md), a [API (Backend)](../environment_variables/backend.md) e para o [Aplicativo Smartphone](./../environment_variables/mobile.md).
 :::
 
@@ -89,7 +89,7 @@ yarn
 
 Posteriormente, para executar o aplicativo será necessário possuir em mãos um celular ou um emulador. Sendo assim, execute o seguinte comando:
 
-:::tip Atenção
+:::tip Rodar em seu Dispositivo
 Para rodar o aplicativo em seu dispositivo físico, basta seguir as instruções [clicando aqui](https://docs.expo.dev/guides/testing-on-devices/).
 :::
 

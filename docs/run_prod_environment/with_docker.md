@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # Rodar com Docker
@@ -19,6 +19,12 @@ Para executar todos os contêineres, primeiramente realize a cópia do arquivo `
 cp docker-compose-prod-only-api-example.yml docker-compose-prod-only-api.yml
 ```
 
+:::caution
+
+Lembre-se de configurar os arquivos de _hosts_ utilizados pelo Nginx. [Clique aqui](./config_nginx.md) para visualizar a configuração.
+
+:::
+
 ## Realizar `deploy` do Painel de Controle e API (Backend)
 
 Com a utilização do _script_ `setup_all.sh` é possivel colocar em produção tanto o Painel de Controle quanto a API com somente um comando. Este arquivo realizá os seguintes passos:
@@ -32,13 +38,13 @@ Com a utilização do _script_ `setup_all.sh` é possivel colocar em produção 
 - Configuração dos certificados SSL.
 - Agendamente mensal de renovação dos certificados SSL.
 
-:::tip Atenção
+:::caution Atenção
 Lembre-se de configurar as variáveis de ambiente do [Painel de Controle](../environment_variables/frontend.md) e da [API (Backend)](../environment_variables/backend.md).
 :::
 
 Por fim, basta executar os seguintes comandos:
 
-:::danger Atenção
+:::tip Atenção
 Será necessário informar o domínio utilizado para o Painel de Controle (Frontend) e para a API (Backend). Assim como, um e-mail para a configuração dos certificados SSL.
 :::
 
@@ -58,13 +64,13 @@ Com a utilização do _script_ `setup_only_frontend.sh` é possivel colocar em p
 - Configuração dos certificados SSL.
 - Agendamente mensal de renovação dos certificados SSL.
 
-:::tip Atenção
+:::caution Atenção
 Lembre-se de configurar as variáveis de ambiente do [Painel de Controle](../environment_variables/frontend.md).
 :::
 
 Por fim, basta executar os seguintes comandos:
 
-:::danger Atenção
+:::tip Atenção
 Será necessário informar o domínio utilizado para o Painel de Controle (Frontend). Assim como, um e-mail para a configuração dos certificados SSL.
 :::
 
@@ -85,13 +91,13 @@ Com a utilização do _script_ `setup_only_backend.sh` é possivel colocar em pr
 - Configuração dos certificados SSL.
 - Agendamente mensal de renovação dos certificados SSL.
 
-:::tip Atenção
+:::caution Atenção
 Lembre-se de configurar as variáveis de ambiente da [API (Backend)](../environment_variables/backend.md).
 :::
 
 Por fim, basta executar os seguintes comandos:
 
-:::danger Atenção
+:::tip Atenção
 Será necessário informar o domínio utilizado para a API (Backend). Assim como, um e-mail para a configuração dos certificados SSL.
 :::
 

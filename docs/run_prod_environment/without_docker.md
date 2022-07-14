@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # Rodar sem Docker
@@ -11,17 +11,19 @@ Para conseguir rodar o projeto em modo produção em sua máquina, instale as se
 - [Expo CLI](https://docs.expo.dev/workflow/expo-cli/)
 - [PM2](https://pm2.keymetrics.io/)
 
-:::tip Atenção
+:::caution Atenção
 Lembre-se de configurar as variáveis de ambiente para o [Painel de Controle](../environment_variables/frontend.md), a [API (Backend)](../environment_variables/backend.md) e para o [Aplicativo Smartphone](./../environment_variables/mobile.md).
+:::
+
+:::caution
+
+Lembre-se de configurar os arquivos de _hosts_ utilizados pelo Nginx. [Clique aqui](./config_nginx.md) para visualizar a configuração.
+
 :::
 
 ## Realizar `deploy` do Painel de Controle
 
 Para colocar o Painel de Controle em modo produção, devemos executar os seguintes comandos:
-
-:::tip Atenção
-Lembre-se de configurar as variáveis de ambiente do [Painel de Controle](../environment_variables/frontend.md).
-:::
 
 ```bash title="npm"
   cd frontend
@@ -38,10 +40,6 @@ Lembre-se de configurar as variáveis de ambiente do [Painel de Controle](../env
 ## Realizar `deploy` da API (Backend)
 
 Para colocar o Painel de Controle em modo produção, devemos executar os seguintes comandos:
-
-:::tip Atenção
-Lembre-se de configurar as variáveis de ambiente da [API (Backend)](../environment_variables/backend.md).
-:::
 
 Primeiramente, é necessário instalar as dependências de produção com os seguintes comandos:
 
@@ -76,7 +74,7 @@ Com a utilização do _script_ `setup_only_nginx.sh` é possivel configurar os c
 
 Por fim, basta executar os seguintes comandos:
 
-:::danger Atenção
+:::tip Atenção
 Será necessário informar o domínio utilizado para o Painel de Controle (Frontend) e para a API (Backend). Assim como, um e-mail para a configuração dos certificados SSL.
 :::
 
