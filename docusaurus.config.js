@@ -40,6 +40,7 @@ const config = {
           //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
+          blogSidebarTitle: "Blog Quiz UTPFR",
           showReadingTime: true,
           readingTime: ({content, frontMatter, defaultReadingTime}) =>
             defaultReadingTime({content, options: {wordsPerMinute: 300}}),
