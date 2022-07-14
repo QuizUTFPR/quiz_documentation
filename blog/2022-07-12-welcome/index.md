@@ -2,7 +2,7 @@
 slug: resumo-projeto
 title: Resumo do Projeto
 description: O que é o Quiz Gamificado UTFPR.
-authors: [jhonatancunha, jessepires]
+authors: [jessepires, jhonatancunha]
 tags: [quiz, utfpr]
 ---
 
