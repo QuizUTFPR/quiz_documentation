@@ -132,6 +132,10 @@ const config = {
         darkTheme: darkCodeTheme,
       },
       metadata: [
+        {
+          name: 'author',
+          content: 'Jessé Pires Barbato Rocha, Jhonatan Guilherme de Oliveira Cunha'
+        }, 
         { 
           name: 'description',
           content: 'Projeto de Extensão - Universidade Tecnológica Federal do Paraná'
@@ -148,6 +152,11 @@ const config = {
         { 
           key:"ogimage",
           name: 'og:image',
+          content: 'https://quizdocumentation.netlify.app/img/capa.png'
+        },
+        { 
+          name:"image",
+          property: 'og:image',
           content: 'https://quizdocumentation.netlify.app/img/capa.png'
         },
         { 
