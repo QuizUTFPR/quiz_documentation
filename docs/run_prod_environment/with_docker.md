@@ -105,3 +105,32 @@ Será necessário informar o domínio utilizado para a API (Backend). Assim como
 chmod +x ./setup_only_backend.sh
 ./setup_only_backend.sh
 ```
+
+## Atualizar `deploy` do Painel de Controle
+
+Utilize o script `update_frontend_production.sh` para realizar a atualização do Painel de Controle caso efetue alguma modificação após o mesmo já estar funcionando no servidor. O script realiza as seguintes ações:
+
+- Instala as dependências caso exista alguma faltante.
+- Realiza o processo de build do Painel de Controle.
+- Copia os arquivos gerados para a pasta `/var/www/html/quiz` (pasta root padrão da configuração dos arquivos de _hosts_ do Nginx).
+
+Sendo assim, para executar o _script_ basta executar os seguintes comandos:
+
+```bash
+chmod +x ./update_frontend_production.sh
+./update_frontend_production.sh
+```
+
+## Atualizar `deploy` da API (Backend)
+
+Utilize o script `update_backend_production.sh` para realizar a atualização da API (Backend) caso realize alguma modificação após a mesma já estar funcionando no servidor. O script realiza as seguintes ações:
+
+- Para o container da API (Backend).
+- Inicia novamente o container da API (Backend).
+
+Sendo assim, para executar o _script_ basta executar os seguintes comandos:
+
+```bash
+chmod +x ./update_backend_production.sh
+./update_backend_production.sh
+```

@@ -82,3 +82,30 @@ Será necessário informar o domínio utilizado para o Painel de Controle (Front
 chmod +x ./setup_only_nginx.sh
 ./setup_only_nginx.sh
 ```
+
+## Atualizar `deploy` do Painel de Controle
+
+Utilize o script `update_frontend_production.sh` para realizar a atualização do Painel de Controle caso efetue alguma modificação após o mesmo já estar funcionando no servidor. O script realiza as seguintes ações:
+
+- Instala as dependências caso exista alguma faltante.
+- Realiza o processo de build do Painel de Controle.
+- Copia os arquivos gerados para a pasta `/var/www/html/quiz` (pasta root padrão da configuração dos arquivos de _hosts_ do Nginx).
+
+Sendo assim, para executar o _script_ basta executar os seguintes comandos:
+
+```bash
+chmod +x ./update_frontend_production.sh
+./update_frontend_production.sh
+```
+
+## Atualizar `deploy` da API (Backend)
+
+Caso deseje atualizar a API no servidor onde a mesma está hospedada, basta executar o seguinte comando do **PM2**:
+
+:::tip Atenção
+Note que o comando abaixo está aplicando o _reload_ para o processo com o nome `api`. Você deverá utilizar o nome escolhido no passo [Realizar `deploy` da API (Backend)](#realizar-deploy-da-api-backend).
+:::
+
+```bash
+pm2 reload api
+```
