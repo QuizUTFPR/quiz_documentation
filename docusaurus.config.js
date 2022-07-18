@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Documentação Técnica - Quiz UTFPR',
   tagline: 'Projeto de Extensão - Universidade Tecnológica Federal do Paraná',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://quizdocumentation.netlify.app',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -26,6 +26,8 @@ const config = {
     defaultLocale: 'pt-br',
     locales: ['pt-br'],
   },
+
+
 
   presets: [
     [
@@ -129,6 +131,37 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+      metadata: [
+        { 
+          name: 'description',
+          content: 'Projeto de Extensão - Universidade Tecnológica Federal do Paraná'
+        },
+        {
+          name: 'keywords', 
+          content: 'website, utfpr, quiz, gamification, gamificação'
+        },
+        { 
+          key:"ogdesc",
+          name: 'og:description',
+          content: 'Projeto de Extensão - Universidade Tecnológica Federal do Paraná'
+        },
+        { 
+          key:"ogimage",
+          name: 'og:image',
+          content: 'https://quizdocumentation.netlify.app/img/capa.png'
+        },
+        { 
+          key:"ogurl",
+          name: 'og:url',
+          content: 'https://quizdocumentation.netlify.app'
+        },
+        { 
+          key:"ogsitename",
+          name: 'og:site_name',
+          content: 'Documentação Técnica - Quiz UTFPR'
+        },
+      ],
+
     }),
 };
 
