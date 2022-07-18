@@ -27,10 +27,9 @@ function HomepageHeader() {
 }
 
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
+  // const {siteConfig} = useDocusaurusContext();
   return (
-    <Layout
-      title={`${siteConfig.title}`}>
+    <Layout>
       <HomepageHeader />
       <main>
         <HomepageFeatures />
