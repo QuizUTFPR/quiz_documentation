@@ -134,7 +134,7 @@ const config = {
       metadata: [
         {
           name: 'author',
-          content: 'Jhonatan Guilherme de Oliveira Cunha, Jessé Pires Barbato Rocha'
+          content: 'co-authored by Jhonatan Guilherme de Oliveira Cunha, Jessé Pires Barbato Rocha'
         }, 
         { 
           name: 'description',
