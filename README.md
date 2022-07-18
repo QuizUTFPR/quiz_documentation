@@ -32,8 +32,6 @@
 
 Este projeto foi desenvolvido para divulgação do Sistema de Quiz, desenvolvido como projeto de extensão na UTFPR Campus Campo Mourão sob orientação dos professores Juliano Henrique Foleis e Marcos Silvano.
 
----
-
 ## 🚀 Como executar o projeto
 
 ### Pré-requisitos
