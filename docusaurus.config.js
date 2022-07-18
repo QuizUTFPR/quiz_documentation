@@ -150,8 +150,13 @@ const config = {
           content: 'Projeto de Extensão - Universidade Tecnológica Federal do Paraná'
         },
         { 
+          property:"og:description",
+          name: 'description',
+          content: 'Projeto de Extensão - Universidade Tecnológica Federal do Paraná'
+        },
+        { 
           key:"ogimage",
-          name: 'og:image',
+          name: 'og:image', 
           content: 'https://quizdocumentation.netlify.app/img/capa.png'
         },
         { 
