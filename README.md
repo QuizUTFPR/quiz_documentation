@@ -14,8 +14,6 @@
 
 # Tabela de conteúdos
 
-<!--ts-->
-
 - [Tabela de conteúdos](#tabela-de-conteúdos)
   - [💻 Sobre o projeto](#-sobre-o-projeto)
   - [🚀 Como executar o projeto](#-como-executar-o-projeto)
@@ -26,7 +24,6 @@
   - [🛠 Tecnologias](#-tecnologias)
   - [💪 Como contribuir com o projeto](#-como-contribuir-com-o-projeto)
   - [🦸 Autores](#-autores)
-  <!--te-->
 
 ## 💻 Sobre o projeto
 
@@ -57,10 +54,8 @@ $ npm run start
 $ git clone https://github.com/jhonatancunha/quiz_documentation
 $ cd quiz_documentation
 $ yarn
-$ npm start
+$ yarn start
 ```
-
----
 
 ## 🛠 Tecnologias
 
@@ -70,16 +65,12 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 > Veja o arquivo [package.json](https://github.com/jhonatancunha/quiz_documentation/blob/main/package.json) para mais detalhes.
 
----
-
 ## 💪 Como contribuir com o projeto
 
 1. Faça um **fork** do projeto.
 2. Crie uma nova branch com as suas alterações: `git checkout -b my-feature`
 3. Salve as alterações e crie uma mensagem de commit contando o que você fez: `git commit -m "feature: My new feature"`
 4. Envie as suas alterações: `git push origin my-feature`
-
----
 
 ## 🦸 Autores
 
