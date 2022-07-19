@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Documentação Técnica - Quiz UTFPR',
   tagline: 'Projeto de Extensão - Universidade Tecnológica Federal do Paraná',
-  url: 'https://quizdocumentation.netlify.app',
+  url: 'https://docsquizutfpr.netlify.app',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -157,17 +157,17 @@ const config = {
         { 
           key:"ogimage",
           name: 'og:image', 
-          content: 'https://quizdocumentation.netlify.app/img/capa.png'
+          content: 'https://docsquizutfpr.netlify.app/img/capa.png'
         },
         { 
           name:"image",
           property: 'og:image',
-          content: 'https://quizdocumentation.netlify.app/img/capa.png'
+          content: 'https://docsquizutfpr.netlify.app/img/capa.png'
         },
         { 
           key:"ogurl",
           name: 'og:url',
-          content: 'https://quizdocumentation.netlify.app'
+          content: 'https://docsquizutfpr.netlify.app'
         },
         { 
           key:"ogsitename",
