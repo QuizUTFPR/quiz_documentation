@@ -31,9 +31,9 @@ Lembre-se de configurar as variáveis de ambiente para o [Painel de Controle](..
 docker-compose -f docker-compose-dev.yml up -d --build
 ```
 
-## Iniciar o Aplicativo SmartPhone
+## Iniciar o Aplicativo Móvel
 
-Para iniciar a aplicação SmartPhone é necessário instalar as dependências, sendo assim, siga os seguintes passos:
+Para iniciar a aplicação Móvel é necessário instalar as dependências, sendo assim, siga os seguintes passos:
 
 ```bash title="npm"
 cd mobile

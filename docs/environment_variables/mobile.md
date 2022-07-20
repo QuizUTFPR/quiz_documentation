@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Aplicativo Smartphone
 
-Entre no diretório do `mobile`.
+Entre no diretório `mobile`.
 
 ```bash
 cd quizUTFPR/mobile

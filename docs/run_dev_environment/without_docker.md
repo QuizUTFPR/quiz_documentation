@@ -73,9 +73,9 @@ npm run dev
 yarn dev
 ```
 
-## Iniciar o Aplicativo SmartPhone
+## Iniciar o Aplicativo Móvel
 
-Para iniciar a aplicação SmartPhone é necessário instalar as dependências, sendo assim, siga os seguintes passos:
+Para iniciar a aplicação Móvel é necessário instalar as dependências, sendo assim, siga os seguintes passos:
 
 ```bash title="npm"
 cd mobile

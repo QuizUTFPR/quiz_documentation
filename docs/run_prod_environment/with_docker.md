@@ -27,7 +27,7 @@ Lembre-se de configurar os arquivos de _hosts_ utilizados pelo Nginx. [Clique aq
 
 ## Realizar `deploy` do Painel de Controle e API (Backend)
 
-Com a utilização do _script_ `setup_all.sh` é possivel colocar em produção tanto o Painel de Controle quanto a API com somente um comando. Este arquivo realizá os seguintes passos:
+Com a utilização do _script_ `setup_all.sh` é possivel colocar em produção tanto o Painel de Controle quanto a API com somente um comando. Este arquivo realizará os seguintes passos:
 
 - Instalação do `docker` e `docker-compose`.
 - Instalação e configuração da versão do `node v16.0.0`.
@@ -36,7 +36,7 @@ Com a utilização do _script_ `setup_all.sh` é possivel colocar em produção 
 - Instalação do _Nginx_.
 - Configuração do _Proxy_.
 - Configuração dos certificados SSL.
-- Agendamente mensal de renovação dos certificados SSL.
+- Agendamento mensal de renovação dos certificados SSL.
 
 :::caution Atenção
 Lembre-se de configurar as variáveis de ambiente do [Painel de Controle](../environment_variables/frontend.md) e da [API (Backend)](../environment_variables/backend.md).
@@ -55,14 +55,14 @@ chmod +x ./setup_all.sh
 
 ## Realizar `deploy` somente do Painel de Controle
 
-Com a utilização do _script_ `setup_only_frontend.sh` é possivel colocar em produção o Painel de Controle com somente um comando. Este arquivo realizá os seguintes passos:
+Com a utilização do _script_ `setup_only_frontend.sh` é possivel colocar em produção o Painel de Controle com somente um comando. Este arquivo realizará os seguintes passos:
 
 - Instalação e configuração da versão do `node v16.0.0`.
 - Realização do processo de _build_ do Painel de Controle.
 - Instalação do _Nginx_.
 - Configuração do _Proxy_.
 - Configuração dos certificados SSL.
-- Agendamente mensal de renovação dos certificados SSL.
+- Agendamento mensal de renovação dos certificados SSL.
 
 :::caution Atenção
 Lembre-se de configurar as variáveis de ambiente do [Painel de Controle](../environment_variables/frontend.md).
@@ -81,7 +81,7 @@ chmod +x ./setup_only_frontend.sh
 
 ## Realizar `deploy` somente da API (Backend)
 
-Com a utilização do _script_ `setup_only_backend.sh` é possivel colocar em produção a API com somente um comando. Este arquivo realizá os seguintes passos:
+Com a utilização do _script_ `setup_only_backend.sh` é possivel colocar em produção a API com somente um comando. Este arquivo realizará os seguintes passos:
 
 - Instalação do `docker` e `docker-compose`.
 - Instalação e configuração da versão do `node v16.0.0`.
@@ -89,7 +89,7 @@ Com a utilização do _script_ `setup_only_backend.sh` é possivel colocar em pr
 - Instalação do _Nginx_.
 - Configuração do _Proxy_.
 - Configuração dos certificados SSL.
-- Agendamente mensal de renovação dos certificados SSL.
+- Agendamento mensal de renovação dos certificados SSL.
 
 :::caution Atenção
 Lembre-se de configurar as variáveis de ambiente da [API (Backend)](../environment_variables/backend.md).
@@ -114,7 +114,7 @@ Utilize o script `update_frontend_production.sh` para realizar a atualização d
 - Realiza o processo de build do Painel de Controle.
 - Copia os arquivos gerados para a pasta `/var/www/html/quiz` (pasta root padrão da configuração dos arquivos de _hosts_ do Nginx).
 
-Sendo assim, para executar o _script_ basta executar os seguintes comandos:
+Sendo assim, para executar o _script_, basta executar os seguintes comandos:
 
 ```bash
 chmod +x ./update_frontend_production.sh

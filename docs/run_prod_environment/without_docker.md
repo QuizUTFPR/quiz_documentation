@@ -65,7 +65,7 @@ Por fim, basta executar o servidor utilizando o gerenciador de processos **PM2**
 
 ## Configuração dos certificados SSL
 
-Com a utilização do _script_ `setup_only_nginx.sh` é possivel configurar os certificados do Painel de Controle e da API (Backend).
+Com a utilização do _script_ `setup_only_nginx.sh` é possivel configurar os certificados do Painel de Controle e da API (Backend). Tal _script_ realiza os seguintes passos:
 
 - Instalação do _Nginx_.
 - Configuração do _Proxy_.
@@ -85,7 +85,7 @@ chmod +x ./setup_only_nginx.sh
 
 ## Atualizar `deploy` do Painel de Controle
 
-Utilize o script `update_frontend_production.sh` para realizar a atualização do Painel de Controle caso efetue alguma modificação após o mesmo já estar funcionando no servidor. O script realiza as seguintes ações:
+Utilize o _script_ `update_frontend_production.sh` para realizar a atualização do Painel de Controle caso efetue alguma modificação após o mesmo já estar funcionando no servidor. O _script_ realiza as seguintes ações:
 
 - Instala as dependências caso exista alguma faltante.
 - Realiza o processo de build do Painel de Controle.
