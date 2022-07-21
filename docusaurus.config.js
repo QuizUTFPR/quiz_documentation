@@ -72,7 +72,7 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Documentação',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
@@ -89,8 +89,12 @@ const config = {
             title: 'Guia',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Documentação',
                 to: '/docs/intro',
+              },
+              {
+                label: 'Blog',
+                to: '/blog',
               },
             ],
           },
@@ -115,13 +119,10 @@ const config = {
             title: 'Outros',
             items: [
               {
-                label: 'Jhonatan LinkedIn',
-                href: 'https://www.linkedin.com/in/jhocunha/',
+                label: 'Quiz Gamificado UTFPR',
+                href: 'https://quizutfpr.netlify.app/',
               },
-              {
-                label: 'Jessé LinkedIn',
-                href: 'https://www.linkedin.com/in/jesse-pires-barbato-rocha-933714202/',
-              },
+              
             ],
           },
         ],
