@@ -110,13 +110,13 @@ chmod +x ./setup_only_backend.sh
 
 Utilizando o `eas`, realize o login com sua conta do expo.
 
-```bash title="terminal"
+```bash title="Terminal"
 eas login
 ```
 
 Realize a configuração do `build`.
 
-```bash title="terminal"
+```bash title="Terminal"
 eas build:configure
 ```
 

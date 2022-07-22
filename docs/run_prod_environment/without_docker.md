@@ -12,7 +12,7 @@ Para conseguir rodar o projeto em modo produção em sua máquina, instale as se
 - [PM2](https://pm2.keymetrics.io/)
 
 :::caution Atenção
-Lembre-se de configurar as variáveis de ambiente para o [Painel de Controle](../environment_variables/frontend.md), a [API (Backend)](../environment_variables/backend.md) e para o [Aplicativo Smartphone](./../environment_variables/mobile.md).
+Lembre-se de configurar as variáveis de ambiente para o [Painel de Controle](../environment_variables/frontend.md), a [API (Backend)](../environment_variables/backend.md) e para o [Aplicativo Móvel](./../environment_variables/mobile.md).
 :::
 
 :::caution
@@ -85,15 +85,23 @@ chmod +x ./setup_only_nginx.sh
 
 ## Realizar `build` do Aplicativo Móvel
 
+:::caution Atenção
+Lembre-se de configurar as variáveis de ambiente para o [Aplicativo Móvel](./../environment_variables/mobile.md).
+:::
+
+:::tip Dica
+Caso queira ver a documentação do próprio expo a respeito do _build_, [clique aqui](https://docs.expo.dev/build/setup/).
+:::
+
 Utilizando o `eas`, realize o login com sua conta do expo.
 
-```bash title="terminal"
+```bash title="Terminal"
 eas login
 ```
 
 Realize a configuração do `build`.
 
-```bash title="terminal"
+```bash title="Terminal"
 eas build:configure
 ```
 

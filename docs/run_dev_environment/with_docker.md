@@ -24,7 +24,7 @@ cp docker-compose-dev-example.yml docker-compose-dev.yml
 Por fim, execute o seguinte comando para executar todo o sistema:
 
 :::caution Atenção
-Lembre-se de configurar as variáveis de ambiente para o [Painel de Controle](../environment_variables/frontend.md), a [API (Backend)](../environment_variables/backend.md) e para o [Aplicativo Smartphone](./../environment_variables/mobile.md).
+Lembre-se de configurar as variáveis de ambiente para o [Painel de Controle](../environment_variables/frontend.md), a [API (Backend)](../environment_variables/backend.md) e para o [Aplicativo Móvel](./../environment_variables/mobile.md).
 :::
 
 ```bash

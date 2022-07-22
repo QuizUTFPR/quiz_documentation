@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# Aplicativo Smartphone
+# Aplicativo Móvel
 
 Entre no diretório `mobile`.
 
