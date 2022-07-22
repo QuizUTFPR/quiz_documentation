@@ -83,6 +83,42 @@ chmod +x ./setup_only_nginx.sh
 ./setup_only_nginx.sh
 ```
 
+## Realizar `build` do Aplicativo Móvel
+
+Utilizando o `eas`, realize o login com sua conta do expo.
+
+```bash title="terminal"
+eas login
+```
+
+Realize a configuração do `build`.
+
+```bash title="terminal"
+eas build:configure
+```
+
+E siga os passos necessários.
+
+Por fim, basta rodar o comando que realiza o build
+
+```bash title="Para Android"
+eas build --platform android
+```
+
+```bash title="Para IOS"
+eas build --platform ios
+```
+
+```bash title="Para ambos"
+eas build --platform all
+```
+
+Será necessário aguardar um tempo para que o _build_ seja finalizado. É possível verificar se já foi feito listando os _builds_ finalizados.
+
+```bash title="Listando os builds"
+eas build:list
+```
+
 ## Atualizar `deploy` do Painel de Controle
 
 Utilize o _script_ `update_frontend_production.sh` para realizar a atualização do Painel de Controle caso efetue alguma modificação após o mesmo já estar funcionando no servidor. O _script_ realiza as seguintes ações:
