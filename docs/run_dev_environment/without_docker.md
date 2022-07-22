@@ -75,14 +75,6 @@ yarn dev
 
 ## Iniciar o Aplicativo Móvel
 
-:::caution Atenção
-Lembre-se de configurar as variáveis de ambiente para o [Aplicativo Móvel](./../environment_variables/mobile.md).
-:::
-
-:::tip Dica
-Caso queira ver a documentação do próprio expo a respeito do _build_, [clique aqui](https://docs.expo.dev/build/setup/).
-:::
-
 Para iniciar a aplicação Móvel é necessário instalar as dependências, sendo assim, siga os seguintes passos:
 
 ```bash title="npm"

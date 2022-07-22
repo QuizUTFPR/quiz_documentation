@@ -108,6 +108,14 @@ chmod +x ./setup_only_backend.sh
 
 ## Realizar `build` do Aplicativo Móvel
 
+:::caution Atenção
+Lembre-se de configurar as variáveis de ambiente para o [Aplicativo Móvel](./../environment_variables/mobile.md).
+:::
+
+:::tip Dica
+Caso queira ver a documentação do próprio expo a respeito do _build_, [clique aqui](https://docs.expo.dev/build/setup/).
+:::
+
 Utilizando o `eas`, realize o login com sua conta do expo.
 
 ```bash title="Terminal"
