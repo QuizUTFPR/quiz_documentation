@@ -9,3 +9,9 @@
   height: 200px;
   width: 200px;
 }
+
+.built {
+  text-align: center;
+  width: 100%;
+  font-weight: bolder;
+}
