@@ -44,8 +44,8 @@ const config = {
         blog: {
           blogSidebarTitle: "Blog Quiz UTPFR",
           showReadingTime: true,
-          readingTime: ({content, frontMatter, defaultReadingTime}) =>
-            defaultReadingTime({content, options: {wordsPerMinute: 300}}),
+          readingTime: ({ content, frontMatter, defaultReadingTime }) =>
+            defaultReadingTime({ content, options: { wordsPerMinute: 300 } }),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl:
@@ -74,7 +74,7 @@ const config = {
             position: 'left',
             label: 'Documentação',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          { to: '/blog', label: 'Blog', position: 'left' },
           {
             href: 'https://github.com/jhonatancunha/quizUTFPR',
             label: 'GitHub',
@@ -119,10 +119,10 @@ const config = {
             title: 'Outros',
             items: [
               {
-                label: 'Quiz Gamificado UTFPR',
+                label: 'Quiz UTFPR',
                 href: 'https://quizutfpr.netlify.app/',
               },
-              
+
             ],
           },
         ],
@@ -136,42 +136,42 @@ const config = {
         {
           name: 'author',
           content: 'co-authored by Jhonatan Guilherme de Oliveira Cunha, Jessé Pires Barbato Rocha'
-        }, 
-        { 
+        },
+        {
           name: 'description',
           content: 'Projeto de Extensão - Universidade Tecnológica Federal do Paraná'
         },
         {
-          name: 'keywords', 
+          name: 'keywords',
           content: 'website, utfpr, quiz, gamification, gamificação'
         },
-        { 
-          key:"ogdesc",
+        {
+          key: "ogdesc",
           name: 'og:description',
           content: 'Projeto de Extensão - Universidade Tecnológica Federal do Paraná'
         },
-        { 
-          property:"og:description",
+        {
+          property: "og:description",
           name: 'description',
           content: 'Projeto de Extensão - Universidade Tecnológica Federal do Paraná'
         },
-        { 
-          key:"ogimage",
-          name: 'og:image', 
+        {
+          key: "ogimage",
+          name: 'og:image',
           content: 'https://docsquizutfpr.netlify.app/img/capa.png'
         },
-        { 
-          name:"image",
+        {
+          name: "image",
           property: 'og:image',
           content: 'https://docsquizutfpr.netlify.app/img/capa.png'
         },
-        { 
-          key:"ogurl",
+        {
+          key: "ogurl",
           name: 'og:url',
           content: 'https://docsquizutfpr.netlify.app'
         },
-        { 
-          key:"ogsitename",
+        {
+          key: "ogsitename",
           name: 'og:site_name',
           content: 'Documentação Técnica - Quiz UTFPR'
         },

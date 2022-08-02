@@ -1,4 +1,4 @@
-![Capa Quiz Gamificado UTFPR](./capa.png)
+![Capa Quiz UTFPR](./capa.png)
 
 <h1 align="center">
   Documentação Técnica do Projeto <a href="https://github.com/jhonatancunha/quizUTFPR">QuizUTFPR</a>

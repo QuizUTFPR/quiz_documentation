@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Introdução
 
-Vamos descobrir como configurar o ambiente do sistema **Quiz Gamificado UTFPR**.
+Vamos descobrir como configurar o ambiente do sistema **Quiz UTFPR**.
 
 ### Ferramentas Necessárias
 
