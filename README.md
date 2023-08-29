@@ -72,7 +72,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 3. Salve as alterações e crie uma mensagem de commit contando o que você fez: `git commit -m "feature: My new feature"`
 4. Envie as suas alterações: `git push origin my-feature`
 
-## 🦸 Autores
+## 🦸 Contribuidores
 
 <table><tr>
 
