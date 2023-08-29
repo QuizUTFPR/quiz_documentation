@@ -1,5 +1,5 @@
 ---
-name: Doc update
+name: Doc request
 about: Suggest an addition or improvements on documentation
 title: "[DOC]"
 labels: documentation, good first issue
