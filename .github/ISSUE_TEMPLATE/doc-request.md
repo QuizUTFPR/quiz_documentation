@@ -1,7 +1,7 @@
 ---
 name: Doc request
 about: Suggest an addition or improvements on documentation
-title: "[DOC]"
+title: ''
 labels: documentation, good first issue
 assignees: ''
 
